@@ -1,0 +1,81 @@
+<html>
+  <head>
+    <title>Basic Layout</title>
+    <style>
+      body {
+        font-family: arial, helvetica;
+      }
+      table {
+        width: 300px;
+        border-spacing: 0px 0px;
+        table-layout: auto;
+        border-collapse: collapse;
+        empty-cells: hide;
+      }
+      table,
+      td,
+      th {
+        border: 1px solid #000;
+      }
+      td,
+      th {
+        vertical-align: top;
+        padding: 10px 20px;
+      }
+      caption {
+        caption-side: top;
+      }
+      /* tr:hover {
+        background: #f2f2f2;
+      } */
+      tr:nth-child(even){
+        background: #f2f2f2;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>RRK : CSS Table Properties</h1>
+    <table>
+      <tr>
+        <caption>
+          Employee Record
+        </caption>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Savings</th>
+      </tr>
+      <tr>
+        <td>Raveena</td>
+        <td>Kale</td>
+        <td>$150</td>
+      </tr>
+      <tr>
+        <td>Vaishnavi</td>
+        <td>Kale</td>
+        <td>$130</td>
+      </tr>
+      <tr>
+        <td>
+          Pallavi Lhkbhbkjibiubuibnsfdvsedfvfdvefvedsvedvdefedfvkjbnkjubj jkb
+          kjb orem ipsum dolor sit amet consectetur adipisicing elit. Quos
+          labore quidem provident? Nisi perferendis animi aliquid quia deserunt?
+          Dolores dolore necessitatibus esse accusantium exercitationem sit ad
+          quibusdam, ratione nisi velit?
+        </td>
+        <td>Kale</td>
+        <td>$100</td>
+      </tr>
+      <tr>
+        <td>
+          Chaitali Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+          Dicta et ab similique incidunt magni commodi hic, eius non ea quas
+          ratione nesciunt aspernatur officiis optio cupiditate, nam excepturi
+          in quo!
+        </td>
+        <td>Kale</td>
+        <td>$100</td>
+      </tr>
+    </table>
+  </body>
+</html>

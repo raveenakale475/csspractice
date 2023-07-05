@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Font</title>
+    <style>
+      #box {
+        width: 400px;
+        padding: 25px;
+        border: 1px solid red;
+        /* font-size: 15px; */
+        margin-bottom: 20px;
+        /* 1em=18px */
+        /* font-family: Arial, Helvetica, sans-serif;
+        line-height: 2em;
+        font-weight: bolder ;
+        font-style: oblique;
+        font-variant: small-caps; */
+
+        font : oblique small-caps normal 1em/35px arial;
+      }
+      #box2 {
+        width: 400px;
+        padding: 25px;
+        border: 1px solid red;
+      }
+      #box2 span {
+        font-size: 2em;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>RRK : Font</h1>
+    <div id="box">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo nisi
+      qui ipsa ipsam excepturi odio eum maiores perspiciatis aperiam. Quis harum
+      iusto ratione ab natus, magnam esse enim doloribus sequi?
+    </div>
+    <div id="box2">
+      <!-- compount span means span within span -->
+      Lorem ipsum<span
+        >dolor sit amet <span>consectetur adipisicing </span>elit.</span
+      >
+      Explicabo nisi qui ipsa ipsam excepturi odio eum maiores perspiciatis
+      aperiam. Quis harum iusto ratione ab natus, magnam esse enim doloribus
+      sequi?
+    </div>
+  </body>
+</html>

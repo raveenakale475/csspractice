@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Gradient</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      #box {
+        width: 800px;
+        height: 300px;
+        padding: 30px;
+        border: 1px solid red;
+        background: linear-gradient(-145deg, red, yellow, magenta);
+      }
+      #box2 {
+        width: 800px;
+        height: 300px;
+        padding: 30px;
+        border: 1px solid red;
+        /*  closest-side,farthest-side,closest-corner,farthest-corner */
+        /* background: radial-gradient(closest-side at 50% 50%, red, yellow, green); */
+        background: repeating-radial-gradient(circle, red, blue 10%, green 15%);
+      }
+      p {
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>RRK : CSS Gradient</h1>
+    <div id="box">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam eveniet
+        pariatur quos itaque veritatis beatae ea amet, odit expedita quaerat,
+        corporis necessitatibus sunt odio sequi in ipsam ipsa iste deserunt?
+      </p>
+    </div>
+    <div id="box2">
+      <h1>Radical gradient</h1>
+    </div>
+  </body>
+</html>
