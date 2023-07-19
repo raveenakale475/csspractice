@@ -1,0 +1,49 @@
+<head>
+  <title>Animation</title>
+  <style>
+    body {
+      font-family: arial, helvetica;
+      background: #eee;
+    }
+    .card {
+      width: 300px;
+      height: 300px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      color: #03446a;
+      line-height: 300px;
+      margin: -150px;
+      background: white;
+      text-align: center;
+      font-size: 40px;
+      animation-name: sample;
+      animation-duration: 2s;
+      animation-timing-function: cubic-bezier(0.6, 0.1, 1, 1.0);
+      animation-delay: 2s;
+      animation-direction: alternate-reverse;
+      animation-iteration-count: infinite;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+
+      /* animation: sample 2s cubic-bezier(0.6, 0.1, 1, 0.1) 1s infinite alternate-reverse; */
+    }
+    @keyframes sample {
+      0% {
+        border-radius: 0%;
+      }
+      50% {
+        background-color: blueviolet;
+        color: aqua;
+      }
+      100% {
+        border-radius: 50%;
+        background-color: teal;
+        color: white;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1 style="margin-bottom: 50px">RRK : CSS Animation</h1>
+  <div class="card">RRK</div>
+</body>

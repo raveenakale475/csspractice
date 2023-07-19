@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font-family: arial, helvetica;
+      }
+      .container {
+        width: 70%;
+        margin: 0 auto;
+      }
+      clearfix {
+        clear: both;
+      }
+      .box {
+        width: 32%;
+        float: left;
+        border: 2px solid red;
+        box-sizing: border-box;
+        margin-bottom: 13px;
+        padding: 10px;
+        margin-right: 2%;
+      }
+      .box img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        object-position: bottom;
+      }
+      .last {
+        margin-right: 0;
+      }
+      @media screen and (max-width: 950px) {
+        .box {
+          width: 48%;
+        }
+      }
+      @media screen and (max-width: 800px) {
+        .box {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <img
+          src="https://picsum.photos/300/300"
+          alt=""
+        />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis modi
+          magnam nulla. Quas odit magnam numquam consequatur minus culpa
+          laudantium facilis est atque quos delectus itaque neque nesciunt,
+          magni quasi?
+        </p>
+      </div>
+      <div class="box">
+        <img
+          src="https://picsum.photos/400/300"
+          alt=""
+        />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis modi
+          magnam nulla. Quas odit magnam numquam consequatur minus culpa
+          laudantium facilis est atque quos delectus itaque neque nesciunt,
+          magni quasi?
+        </p>
+      </div>
+      <div class="box">
+        <img
+          src="https://picsum.photos/500/300"
+          alt=""
+        />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis modi
+          magnam nulla. Quas odit magnam numquam consequatur minus culpa
+          laudantium facilis est atque quos delectus itaque neque nesciunt,
+          magni quasi?
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

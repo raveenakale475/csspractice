@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <title>Perspective</title>
+    <style>
+      body {
+        font-family: arial, helvetica;
+      }
+      .base {
+        width: 350px;
+        height: 250px;
+        background: grey;
+        font-size: 18px;
+        text-align: center;
+        margin: 100px 0 0 100px;
+        perspective: 900px;
+        perspective-origin: top left;
+      }
+      #box {
+        width: 350px;
+        height: 250px;
+        background: tomato;
+        transform: rotateX(60deg);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>RRK : CSS Perspective</h1>
+    <div class="base">
+      <div id="box">RRK</div>
+    </div>
+  </body>
+</html>
