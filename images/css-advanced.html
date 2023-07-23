@@ -5,11 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Basic Layout</title>
     <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
       body {
         font-family: Arial, Helvetica, sans-serif;
         background: silver;
-        padding: 0;
-        margin: 0;
       }
       #wrapper {
         border: 1px solid red;
@@ -88,9 +90,8 @@
         }
         #sidebar {
           width: 34%;
-
+        }
       }
-    }
       @media screen and (max-width: 510px) {
         #wrapper {
           width: auto;
@@ -104,9 +105,9 @@
           float: none;
         }
         #header h1 {
-        padding: 30px 0 0 0;
-        text-align: center;
-      }
+          padding: 30px 0 0 0;
+          text-align: center;
+        }
       }
     </style>
   </head>
@@ -141,7 +142,7 @@
       <div id="sidebar">
         <ul>
           <li><a href="">Home</a></li>
-          <li><a href="">Abput us</a></li>
+          <li><a href="">About us</a></li>
           <li><a href="">Gallery</a></li>
           <li><a href="">Contact us</a></li>
         </ul>
